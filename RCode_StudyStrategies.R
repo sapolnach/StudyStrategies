@@ -12,6 +12,7 @@ levene_test(GradeChange ~ Modification, data = df)
 levene_test(GradeChange ~ Q7, data = df)
 levene_test(GradeChange ~ Q3, data = df)
 levene_test(GradeChange ~ Tipsheets, data = df)
+boxplot(df[,c('GradeChange')])
 
 # ANOVA
 res.aov <- aov(GradeChange ~ Modification, data = df) #Fig 8
